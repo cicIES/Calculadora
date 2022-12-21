@@ -4,12 +4,14 @@ package examen.calculadora;
  *
  * @author cic
  */
+import java.util.Scanner;
 public class Calculadora {
+   static int numero1 = 0, numero2 = 0; //Variables de entrada
+   static Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int opcion = -1; //opción del menú
-        int numero1 = 0, numero2 = 0; //Variables de entrada
-
+       
         while (opcion != 0) {
                 System.out.println("Elige opción:\n" + ""
                         + "1.- Sumar\n"
